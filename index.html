@@ -1,92 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-      <link 
-         rel="stylesheet"
-         href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" 
-         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"
-         />
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"/>
-      <!-- Google Fonts -->
-      <link
-         rel="stylesheet"
-         href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-         crossorigin="anonymous"
-         />
-      <link
-         rel="stylesheet"
-         href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"      
-         />
-      <link rel="stylesheet" href="./Assets/style.css" />
-      <title>Work Day Scheduler</title>
-   </head>
-   <body>
-      <!-- header: clear button, time -->
-      <header class="jumbotron">
-         <h1 d-flex justify-content-center align-items-center></h1>
-         <h1 class="display-3">Work Day Scheduler</h1>
-         <p class="lead"> Let's get scheduling!</p>
-         <p class="day"> </p>
-         <p id="currentDay">00:00:00</p>
-         <div class="clear">
-            <button class="btn">Clear all</button>
-         </div>
-      </header>
-      <div class="container">
-         <div class="d-flex">
-            <div class="col-1 d-flex align-items-center" id="text9am">9:00AM</div>
-            <textarea class="justify-content-between flex-grow-1" placeholder="Start typing here to add a task"></textarea>
-            <button class="col-2 btn btn-outline-primary saveBtn justify-content-flex-end"><i class="fas fa-save saveButton"></i></button>
-         </div>
-         <div class="d-flex">
-            <div class="col-1 d-flex align-items-center" id="text10am">10:00AM</div>
-            <textarea class="justify-content-between flex-grow-1" placeholder="Start typing here to add a task"></textarea>
-            <button class="col-2 btn btn-outline-primary saveBtn justify-content-flex-end"><i class="fas fa-save saveButton"></i></button>
-         </div>
-         <div class="d-flex">
-            <div class="col-1 d-flex align-items-center" id="text11am">11:00AM</div>
-            <textarea class="justify-content-between flex-grow-1" placeholder="Start typing here to add a task"></textarea>
-            <button class="col-2 btn btn-outline-primary saveBtn justify-content-flex-end"><i class="fas fa-save saveButton"></i></button>
-         </div>
-         <div class="d-flex">
-            <div class="col-1 d-flex align-items-center" id="text12pm">12:00PM</div>
-            <textarea class="justify-content-between flex-grow-1" placeholder="Start typing here to add a task"></textarea>
-            <button class="col-2 btn btn-outline-primary saveBtn justify-content-flex-end"><i class="fas fa-save saveButton"></i></button>
-         </div>
-         <div class="d-flex">
-            <div class="col-1 d-flex align-items-center" id="text1pm">1:00PM</div>
-            <textarea class="justify-content-between flex-grow-1" placeholder="Start typing here to add a task"></textarea>
-            <button class="col-2 btn btn-outline-primary saveBtn justify-content-flex-end"><i class="fas fa-save saveButton"></i></button>
-         </div>
-         <div class="d-flex">
-            <div class="col-1 d-flex align-items-center" id="text2pm">2:00PM</div>
-            <textarea class="justify-content-between flex-grow-1" placeholder="Start typing here to add a task"></textarea>
-            <button class="col-2 btn btn-outline-primary saveBtn justify-content-flex-end"><i class="fas fa-save saveButton"></i></button>
-         </div>
-         <div class="d-flex">
-            <div class="col-1 d-flex align-items-center" id="text3pm">3:00PM</div>
-            <textarea class="justify-content-between flex-grow-1" placeholder="Start typing here to add a task"></textarea>
-            <button class="col-2 btn btn-outline-primary saveBtn justify-content-flex-end"><i class="fas fa-save saveButton"></i></button>
-         </div>
-         <div class="d-flex">
-            <div class="col-1 d-flex align-items-center" id="text4pm">4:00PM</div>
-            <textarea class="justify-content-between flex-grow-1" placeholder="Start typing here to add a task"></textarea>
-            <button class="col-2 btn btn-outline-primary saveBtn justify-content-flex-end"><i class="fas fa-save saveButton"></i></button>
-         </div>
-         <div class="d-flex">
-            <div class="col-1 d-flex align-items-center" id="text5pm">5:00PM</div>
-            <textarea class="justify-content-between flex-grow-1" placeholder="Start typing here to add a task"></textarea>
-            <button class="col-2 btn btn-outline-primary saveBtn justify-content-flex-end"><i class="fas fa-save saveButton"></i></button>
-         </div>
-      </div>
-      <script src="./Assets/js/jquery.min.js"></script>
-      <!-- <script src="./Assets/js/moment.min.js"></script> -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
-      <script src="./Assets/js/bootstrap.bundle.min.js"></script>
-      <script src="./Assets/js/script.js"></script>
-   </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" />
+  <link rel="stylesheet" href="./Assets/style.css" />
+  <title>Work Day Scheduler</title>
+</head>
+
+<body onload="check_time();">
+  <!-- header: clear button, time -->
+  <header class="jumbotron">
+    <h1 d-flex justify-content-center align-items-center></h1>
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p class="lead"> Let's get scheduling!</p>
+    <p class="day"> </p>
+    <p id="currentDay">00:00:00</p>
+    <div class="clear">
+      <button class="btn">Clear all</button>
+    </div>
+  </header>
+  <div class="container">
+    <div class="d-flex colourTime">
+      <div class="col-1 d-flex align-items-center" data-time="9">9:00AM</div>
+      <textarea class="justify-content-between flex-grow-1" placeholder="Start typing here to add a task"></textarea>
+      <button class="col-2 btn btn-outline-primary saveBtn justify-content-flex-end"><i
+          class="fas fa-save saveButton"></i></button>
+    </div>
+    <div class="d-flex colourTime">
+      <div class="col-1 d-flex align-items-center" data-time="10">10:00AM</div>
+      <textarea class="justify-content-between flex-grow-1" placeholder="Start typing here to add a task"></textarea>
+      <button class="col-2 btn btn-outline-primary saveBtn justify-content-flex-end"><i
+          class="fas fa-save saveButton"></i></button>
+    </div>
+    <div class="d-flex colourTime">
+      <div class="col-1 d-flex align-items-center" data-time="11">11:00AM</div>
+      <textarea class="justify-content-between flex-grow-1" placeholder="Start typing here to add a task"></textarea>
+      <button class="col-2 btn btn-outline-primary saveBtn justify-content-flex-end"><i
+          class="fas fa-save saveButton"></i></button>
+    </div>
+    <div class="d-flex colourTime">
+      <div class="col-1 d-flex align-items-center" data-time="12">12:00PM</div>
+      <textarea class="justify-content-between flex-grow-1" placeholder="Start typing here to add a task"></textarea>
+      <button class="col-2 btn btn-outline-primary saveBtn justify-content-flex-end"><i
+          class="fas fa-save saveButton"></i></button>
+    </div>
+    <div class="d-flex colourTime">
+      <div class="col-1 d-flex align-items-center" data-time="1">1:00PM</div>
+      <textarea class="justify-content-between flex-grow-1" placeholder="Start typing here to add a task"></textarea>
+      <button class="col-2 btn btn-outline-primary saveBtn justify-content-flex-end"><i
+          class="fas fa-save saveButton"></i></button>
+    </div>
+    <div class="d-flex colourTime">
+      <div class="col-1 d-flex align-items-center" data-time="2">2:00PM</div>
+      <textarea class="justify-content-between flex-grow-1" placeholder="Start typing here to add a task"></textarea>
+      <button class="col-2 btn btn-outline-primary saveBtn justify-content-flex-end"><i
+          class="fas fa-save saveButton"></i></button>
+    </div>
+    <div class="d-flex colourTime">
+      <div class="col-1 d-flex align-items-center" data-time="3">3:00PM</div>
+      <textarea class="justify-content-between flex-grow-1" placeholder="Start typing here to add a task"></textarea>
+      <button class="col-2 btn btn-outline-primary saveBtn justify-content-flex-end"><i
+          class="fas fa-save saveButton"></i></button>
+    </div>
+    <div class="d-flex colourTime">
+      <div class="col-1 d-flex align-items-center" data-time="4">4:00PM</div>
+      <textarea class="justify-content-between flex-grow-1" placeholder="Start typing here to add a task"></textarea>
+      <button class="col-2 btn btn-outline-primary saveBtn justify-content-flex-end"><i
+          class="fas fa-save saveButton"></i></button>
+    </div>
+    <div class="d-flex colourTime">
+      <div class="col-1 d-flex align-items-center" data-time="5">5:00PM</div>
+      <textarea class="justify-content-between flex-grow-1" placeholder="Start typing here to add a task"></textarea>
+      <button class="col-2 btn btn-outline-primary saveBtn justify-content-flex-end"><i
+          class="fas fa-save saveButton"></i></button>
+    </div>
+  </div>
+  <script src="./Assets/js/jquery.min.js"></script>
+  <!-- <script src="./Assets/js/moment.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+  <script src="./Assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./Assets/js/script.js"></script>
+</body>
+
 </html>
