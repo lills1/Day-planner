@@ -71,19 +71,20 @@ textarea {
 }
 
 .now{
-  background-color: green;
+  background-color: lightgreen;
 }
 .past{
-  background-color: red;
+  background-color: grey;
 }
 .future{
-  background-color: grey;
+  background-color: lightblue;
   opacity:3;
 }
 
 ::placeholder{
   color:white;
   font-weight: 500;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .container{
