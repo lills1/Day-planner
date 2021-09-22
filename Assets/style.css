@@ -16,12 +16,12 @@ textarea {
 
 .jumbotron {
   text-align: center;
-  background-color:darkcyan; 
-  /* background-image: linear-gradient(to bottom left, lightblue, lightgray); */
+  /* background-color:#83c7d5;  */
+  background-image: linear-gradient( lightblue,lightgray);
   color: black;
   border-radius: 0;
-  border-bottom: solid black;
-  border-top: solid black;
+   border-bottom: solid black;
+  /* border-top: solid black;  */
   
 }
 
@@ -82,7 +82,7 @@ textarea {
 
 .col-1{
   
- background-color:darkcyan;
+ /* background-color:darkcyan; */
   /* text-align:center;
   border-left-style:solid;
    border-top-left-radius: 10px;
@@ -92,8 +92,9 @@ textarea {
   /* border-top-style:solid; */
   /* background-image: linear-gradient(to bottom left, lightblue, lightgray); */
   /* border-right-style:solid; */
-  border-left-style:solid;
-  border-top-style:solid;
-  border-right-style:solid;
+  /* border-left-style:solid; */
+  border-top-style:dashed;
+  /* border-right-style:solid; */
+  /* border-left-style:dashed; */
 }
 
