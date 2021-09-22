@@ -17,6 +17,7 @@
 </head>
 
 <body onload="check_time();">
+
   <!-- header: clear button, time -->
   <header class="jumbotron">
     <h1 d-flex justify-content-center align-items-center></h1>
@@ -25,71 +26,71 @@
     <p class="day"> </p>
     <p id="currentDay">00:00:00</p>
     <div class="clear">
-      <button class="btn">Clear all</button>
+      <button onclick="clearLocal();" class="btn btn-dark">Clear all</button>
     </div>
   </header>
   <div class="container">
     <div class="d-flex colourTime">
       <div class="col-1 d-flex align-items-center" data-time="9">9:00AM</div>
-      <textarea class="justify-content-between flex-grow-1 border-top border-bottom"
+      <textarea class="justify-content-between flex-grow-1 border-top border-bottom saveLocal"
         placeholder="Start typing here to add a task"></textarea>
-      <button class="col-2 btn btn-outline-primary saveBtn justify-content-flex-end"><i
+      <button class="col-2 btn btn-primary saveBtn justify-content-flex-end"><i
           class="fas fa-save saveButton"></i></button>
     </div>
     <div class="d-flex colourTime">
       <div class="col-1 d-flex align-items-center" data-time="10">10:00AM</div>
-      <textarea class="justify-content-between flex-grow-1 border-top border-bottom"
+      <textarea class="justify-content-between flex-grow-1 border-top border-bottom saveLocal"
         placeholder="Start typing here to add a task"></textarea>
-      <button class="col-2 btn btn-outline-primary saveBtn justify-content-flex-end"><i
+      <button class="col-2 btn btn-primary  saveBtn justify-content-flex-end"><i
           class="fas fa-save saveButton"></i></button>
     </div>
     <div class="d-flex colourTime">
       <div class="col-1 d-flex align-items-center" data-time="11">11:00AM</div>
-      <textarea class="justify-content-between flex-grow-1 border-top border-bottom"
+      <textarea class="justify-content-between flex-grow-1 border-top border-bottom saveLocal"
         placeholder="Start typing here to add a task"></textarea>
-      <button class="col-2 btn btn-outline-primary saveBtn justify-content-flex-end"><i
+      <button class="col-2 btn btn-primary saveBtn justify-content-flex-end"><i
           class="fas fa-save saveButton"></i></button>
     </div>
     <div class="d-flex colourTime">
       <div class="col-1 d-flex align-items-center" data-time="12">12:00PM</div>
-      <textarea class="justify-content-between flex-grow-1 border-top border-bottom"
+      <textarea class="justify-content-between flex-grow-1 border-top border-bottom saveLocal"
         placeholder="Start typing here to add a task"></textarea>
-      <button class="col-2 btn btn-outline-primary saveBtn justify-content-flex-end"><i
+      <button class="col-2 btn btn-primary saveBtn justify-content-flex-end"><i
           class="fas fa-save saveButton"></i></button>
     </div>
     <div class="d-flex colourTime">
       <div class="col-1 d-flex align-items-center" data-time="13">1:00PM</div>
-      <textarea class="justify-content-between flex-grow-1 border-top border-bottom"
+      <textarea class="justify-content-between flex-grow-1 border-top border-bottom saveLocal"
         placeholder="Start typing here to add a task"></textarea>
-      <button class="col-2 btn btn-outline-primary saveBtn justify-content-flex-end"><i
+      <button class="col-2 btn btn-primary saveBtn justify-content-flex-end"><i
           class="fas fa-save saveButton"></i></button>
     </div>
     <div class="d-flex colourTime">
       <div class="col-1 d-flex align-items-center" data-time="14">2:00PM</div>
-      <textarea class="justify-content-between flex-grow-1 border-top border-bottom"
+      <textarea class="justify-content-between flex-grow-1 border-top border-bottom saveLocal"
         placeholder="Start typing here to add a task"></textarea>
-      <button class="col-2 btn btn-outline-primary saveBtn justify-content-flex-end"><i
+      <button class="col-2 btn btn-primary saveBtn justify-content-flex-end"><i
           class="fas fa-save saveButton"></i></button>
     </div>
     <div class="d-flex colourTime">
       <div class="col-1 d-flex align-items-center" data-time="15">3:00PM</div>
-      <textarea class="justify-content-between flex-grow-1 border-top border-bottom"
+      <textarea class="justify-content-between flex-grow-1 border-top border-bottom saveLocal"
         placeholder="Start typing here to add a task"></textarea>
-      <button class="col-2 btn btn-outline-primary saveBtn justify-content-flex-end"><i
+      <button class="col-2 btn btn-primary saveBtn justify-content-flex-end"><i
           class="fas fa-save saveButton"></i></button>
     </div>
     <div class="d-flex colourTime">
       <div class="col-1 d-flex align-items-center" data-time="16">4:00PM</div>
-      <textarea class="justify-content-between flex-grow-1 border-top border-bottom"
+      <textarea class="justify-content-between flex-grow-1 border-top border-bottom saveLocal"
         placeholder="Start typing here to add a task"></textarea>
-      <button class="col-2 btn btn-outline-primary saveBtn justify-content-flex-end"><i
+      <button class="col-2 btn btn-primary saveBtn justify-content-flex-end"><i
           class="fas fa-save saveButton"></i></button>
     </div>
     <div class="d-flex colourTime">
       <div class="col-1 d-flex align-items-center" data-time="17">5:00PM</div>
-      <textarea class="justify-content-between flex-grow-1 border-top border-bottom"
+      <textarea class="justify-content-between flex-grow-1 border-top border-bottom saveLocal"
         placeholder="Start typing here to add a task"></textarea>
-      <button class="col-2 btn btn-outline-primary saveBtn justify-content-flex-end"><i
+      <button class="col-2 btn btn-primary saveBtn justify-content-flex-end"><i
           class="fas fa-save saveButton"></i></button>
     </div>
   </div>
