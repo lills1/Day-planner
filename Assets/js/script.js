@@ -1,6 +1,7 @@
 var time = document.getElementById("currentDay");
 var day = document.getElementsByClassName("day");
 
+
 //creates a function to display the current time
 function timeDisplay() {
     time = moment().format("hh:mm:ss");
@@ -46,8 +47,16 @@ function check_time() {
         }
     }
 }
+//key is time, value is user input
+
+window.localStorage.setItem("myKey", "myValue")
+
+function saveLocal() {
+
+}
 
 
-//   check_time();
-
+function clearLocal() {
+    window.localStorage.clear();
+}
 
