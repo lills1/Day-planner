@@ -10,17 +10,18 @@ textarea {
   resize: none;
   color: #000000;
   border-left: 1px solid black;
-  padding: 10px;
+  padding: 2rem;
 }
 
 
 .jumbotron {
   text-align: center;
-  /* background-color: lightblue; */
+  background-color:darkcyan; 
   /* background-image: linear-gradient(to bottom left, lightblue, lightgray); */
   color: black;
   border-radius: 0;
   border-bottom: solid black;
+  border-top: solid black;
   
 }
 
@@ -43,21 +44,6 @@ textarea {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
-}
-
-.past {
-  background-color: #d3d3d3;
-}
-
-
-.present {
-  background-color: #ff6961;
-  color: white;
-}
-
-.future {
-  background-color: #77dd77;
-  color: white;
 }
 
 .saveBtn {
@@ -87,12 +73,27 @@ textarea {
   color:white;
   opacity:0.6;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size:15px;
 }
 
 .container{
   padding-top: 2rem;
 }
 
-textarea{
-  color:black;
+.col-1{
+  
+ background-color:darkcyan;
+  /* text-align:center;
+  border-left-style:solid;
+   border-top-left-radius: 10px;
+   border-right-style:solid; 
+  /* border-top-left-radius: 5px;
+   border-bottom-left-radius: 5px; */
+  /* border-top-style:solid; */
+  /* background-image: linear-gradient(to bottom left, lightblue, lightgray); */
+  /* border-right-style:solid; */
+  border-left-style:solid;
+  border-top-style:solid;
+  border-right-style:solid;
 }
+
