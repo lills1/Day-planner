@@ -2,8 +2,8 @@
 This project was built for my weekly assignment using new concepts with third party api's with a focus on bootstrap and jquery.
 
 <h1> Access and installation </h1>
-This project can be accessed through the following deployed link : 
-You can also clone the repo to your device through 
+This project can be accessed through the following deployed link: https://lills1.github.io/day-planner/
+You can also clone the repo to your device through: git@github.com:lills1/day-planner.git
 <h1> Technologies used </h1>
 <ul>
 <li> HTML </li>
