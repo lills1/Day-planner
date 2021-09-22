@@ -17,42 +17,6 @@ setInterval(timeDisplay, 1000);
 
 function check_time() {
 
-
-
-    // var highScoreEl = document.getElementById("highScoresContainer");
-    // var highscores = "";
-    // var highScoreList = JSON.parse(localStorage.getItem('highscores')) || [];
-    // if (localStorage.getItem('highscores') !== null) {
-    //     highScoreList = JSON.parse(localStorage.getItem('highscores'));
-    // }
-    /*highScore = {
-      name: currentName.value,
-      score: gameScore
-    }
-    highScoreList.push(highscore);
-    window.localStorage.setItem('highscores', JSON.stringify(highScoreList));
-    */
-    // text = "<h3>High Scores</h3>\n<table><tr><td>Name -</td><td> Score</td></tr>";
-    // for (let i = 0; i < highScoreList.length; i++) {
-    //     text += "<tr><td>" + highScoreList[i].name + "</td><td>" + highScoreList[i].score + "</td></tr>";
-    // }
-    // text += "</table>";
-    // highScoreText.innerHTML = text;
-    //show highscores window
-    // if (localStorage.getItem('highscores')) {
-    // highScoreText.innerHTML += highScoreList
-    // } else {
-    //     highScoreText.innerHTMLContent += "No high scores to display"
-    // }
-    // highScoresContainer.style.display = "block";
-
-
-    // highScoreList = JSON.parse(localStorage.getItem('highscores')) || [];
-    // localStorage.setItem('highscores', JSON.stringify(highScoreList));
-    // window.localStorage.setItem('user', JSON.stringify(userObj));
-
-
-
     if (!localStorage.getItem("schedule")) {
         const LEN = 9;
         const scheduleList = new Array(LEN).fill("");
@@ -71,7 +35,6 @@ function check_time() {
             currentPos++;
             textAreaEl = node.getElementsByClassName("justify-content-between")[0];
             textAreaEl.value = scheduleList[currentPos];
-            //look for div with 1 child div
         }
     }
 
@@ -106,7 +69,6 @@ function check_time() {
         }
     }
 }
-//key is time, value is user input
 function saveScheduleItem(currentPos) {
     scheduleList = JSON.parse(localStorage.getItem('schedule')) || [];
     var value = document.getElementsByTagName("textarea")[currentPos].value;
