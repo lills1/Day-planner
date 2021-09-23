@@ -15,6 +15,7 @@ You can also clone the repo to your device through: git@github.com:lills1/day-pl
 </ul>
 
 <h1> Preview </h1>
+<img src="https://github.com/lills1/day-planner/blob/main/Assets/_C__Users_Lilly_day-planner_day-planner_index.html.png">
 
 <h1> Usage </h1>
 
